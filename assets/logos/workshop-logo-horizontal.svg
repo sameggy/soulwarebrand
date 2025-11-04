@@ -1,0 +1,35 @@
+<svg width="700" height="200" viewBox="0 0 700 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Workshop Full Logo - Horizontal Layout -->
+
+  <!-- Anvil Icon (left side) -->
+  <g transform="translate(50, 0)">
+    <!-- Base -->
+    <rect x="50" y="150" width="100" height="16" fill="#D4AF37" stroke="#D4AF37" stroke-width="2" stroke-linejoin="miter"/>
+
+    <!-- Main body with W -->
+    <path d="M 60 70 L 60 150 L 75 150 L 88 110 L 100 130 L 112 110 L 125 150 L 140 150 L 140 70 Z"
+          fill="#D4AF37" stroke="#D4AF37" stroke-width="2" stroke-linejoin="miter"/>
+
+    <!-- Top surface -->
+    <rect x="60" y="54" width="80" height="16" fill="#D4AF37" stroke="#D4AF37" stroke-width="2"/>
+
+    <!-- Grid lines -->
+    <line x1="70" y1="54" x2="70" y2="70" stroke="#2B2D2F" stroke-width="1" opacity="0.4"/>
+    <line x1="80" y1="54" x2="80" y2="70" stroke="#2B2D2F" stroke-width="1" opacity="0.4"/>
+    <line x1="90" y1="54" x2="90" y2="70" stroke="#2B2D2F" stroke-width="1" opacity="0.4"/>
+    <line x1="100" y1="54" x2="100" y2="70" stroke="#2B2D2F" stroke-width="1" opacity="0.4"/>
+    <line x1="110" y1="54" x2="110" y2="70" stroke="#2B2D2F" stroke-width="1" opacity="0.4"/>
+    <line x1="120" y1="54" x2="120" y2="70" stroke="#2B2D2F" stroke-width="1" opacity="0.4"/>
+    <line x1="130" y1="54" x2="130" y2="70" stroke="#2B2D2F" stroke-width="1" opacity="0.4"/>
+
+    <!-- Horns -->
+    <path d="M 40 70 L 60 70 L 60 90 L 48 90 Z" fill="#D4AF37" stroke="#D4AF37" stroke-width="2" stroke-linejoin="miter"/>
+    <path d="M 140 70 L 160 70 L 152 90 L 140 90 Z" fill="#D4AF37" stroke="#D4AF37" stroke-width="2" stroke-linejoin="miter"/>
+  </g>
+
+  <!-- Wordmark (right side) -->
+  <text x="330" y="95" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="42" font-weight="500" fill="#D4AF37" letter-spacing="2">THE WORKSHOP</text>
+
+  <!-- Tagline -->
+  <text x="330" y="125" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="13" font-weight="400" fill="#71797E" letter-spacing="3">CRAFT × CODE</text>
+</svg>

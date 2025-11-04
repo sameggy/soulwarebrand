@@ -1,0 +1,8 @@
+<svg width="600" height="120" viewBox="0 0 600 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Workshop Wordmark - IBM Plex Mono style -->
+
+  <text x="300" y="70" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="48" font-weight="500" fill="#D4AF37" text-anchor="middle" letter-spacing="3">THE WORKSHOP</text>
+
+  <!-- Tagline below -->
+  <text x="300" y="95" font-family="'IBM Plex Mono', 'Courier New', monospace" font-size="14" font-weight="400" fill="#71797E" text-anchor="middle" letter-spacing="4">CRAFT × CODE</text>
+</svg>

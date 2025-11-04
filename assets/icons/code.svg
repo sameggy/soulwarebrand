@@ -1,0 +1,12 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Code Icon - Code brackets -->
+
+  <!-- Left bracket -->
+  <path d="M 20 12 L 14 12 L 14 24 L 14 36 L 20 36" stroke="#D4AF37" stroke-width="2" fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+
+  <!-- Right bracket -->
+  <path d="M 28 12 L 34 12 L 34 24 L 34 36 L 28 36" stroke="#D4AF37" stroke-width="2" fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+
+  <!-- Center slash -->
+  <line x1="26" y1="16" x2="22" y2="32" stroke="#D4AF37" stroke-width="2" stroke-linecap="square"/>
+</svg>

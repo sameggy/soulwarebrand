@@ -1,0 +1,18 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Compass Icon - Drawing circles with precision -->
+
+  <!-- Left leg -->
+  <line x1="20" y1="10" x2="18" y2="38" stroke="#D4AF37" stroke-width="2" stroke-linecap="square"/>
+
+  <!-- Right leg -->
+  <line x1="28" y1="10" x2="30" y2="38" stroke="#D4AF37" stroke-width="2" stroke-linecap="square"/>
+
+  <!-- Hinge -->
+  <circle cx="24" cy="10" r="3" fill="none" stroke="#D4AF37" stroke-width="2"/>
+
+  <!-- Left point -->
+  <circle cx="18" cy="38" r="2" fill="#D4AF37" stroke="#D4AF37" stroke-width="2"/>
+
+  <!-- Right pencil tip -->
+  <path d="M 28 36 L 30 38 L 32 36 Z" fill="#D4AF37" stroke="#D4AF37" stroke-width="2" stroke-linejoin="miter"/>
+</svg>

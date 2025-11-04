@@ -1,0 +1,23 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blueprint Icon - Technical drawing -->
+
+  <!-- Paper -->
+  <rect x="8" y="10" width="32" height="28" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linejoin="miter"/>
+
+  <!-- Grid lines -->
+  <line x1="8" y1="18" x2="40" y2="18" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+  <line x1="8" y1="26" x2="40" y2="26" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+  <line x1="16" y1="10" x2="16" y2="38" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+  <line x1="24" y1="10" x2="24" y2="38" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+  <line x1="32" y1="10" x2="32" y2="38" stroke="#D4AF37" stroke-width="1" opacity="0.5"/>
+
+  <!-- Schematic shape -->
+  <rect x="12" y="14" width="8" height="8" fill="none" stroke="#D4AF37" stroke-width="2"/>
+  <line x1="20" y1="18" x2="28" y2="18" stroke="#D4AF37" stroke-width="2"/>
+  <circle cx="32" cy="18" r="3" fill="none" stroke="#D4AF37" stroke-width="2"/>
+
+  <!-- Dimension line -->
+  <line x1="12" y1="32" x2="36" y2="32" stroke="#D4AF37" stroke-width="2"/>
+  <line x1="12" y1="30" x2="12" y2="34" stroke="#D4AF37" stroke-width="2"/>
+  <line x1="36" y1="30" x2="36" y2="34" stroke="#D4AF37" stroke-width="2"/>
+</svg>

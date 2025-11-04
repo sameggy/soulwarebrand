@@ -1,0 +1,22 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Technical Badge - Can be used for certifications, labels, etc. -->
+
+  <!-- Outer hexagon -->
+  <path d="M 60 10 L 95 32.5 L 95 77.5 L 60 100 L 25 77.5 L 25 32.5 Z"
+        stroke="#D4AF37" stroke-width="2" fill="none" stroke-linejoin="miter"/>
+
+  <!-- Inner hexagon -->
+  <path d="M 60 20 L 85 35 L 85 75 L 60 90 L 35 75 L 35 35 Z"
+        stroke="#D4AF37" stroke-width="1" fill="none" stroke-linejoin="miter"/>
+
+  <!-- Corner marks -->
+  <circle cx="60" cy="10" r="2" fill="#D4AF37"/>
+  <circle cx="95" cy="32.5" r="2" fill="#D4AF37"/>
+  <circle cx="95" cy="77.5" r="2" fill="#D4AF37"/>
+  <circle cx="60" cy="100" r="2" fill="#D4AF37"/>
+  <circle cx="25" cy="77.5" r="2" fill="#D4AF37"/>
+  <circle cx="25" cy="32.5" r="2" fill="#D4AF37"/>
+
+  <!-- Center detail - can be replaced with text or icons -->
+  <circle cx="60" cy="60" r="15" stroke="#D4AF37" stroke-width="2" fill="none"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ruler Icon - Precision measurement -->
+
+  <!-- Ruler body -->
+  <rect x="8" y="18" width="32" height="12" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linejoin="miter"/>
+
+  <!-- Measurement marks -->
+  <line x1="12" y1="18" x2="12" y2="24" stroke="#D4AF37" stroke-width="2"/>
+  <line x1="16" y1="18" x2="16" y2="22" stroke="#D4AF37" stroke-width="2"/>
+  <line x1="20" y1="18" x2="20" y2="24" stroke="#D4AF37" stroke-width="2"/>
+  <line x1="24" y1="18" x2="24" y2="22" stroke="#D4AF37" stroke-width="2"/>
+  <line x1="28" y1="18" x2="28" y2="24" stroke="#D4AF37" stroke-width="2"/>
+  <line x1="32" y1="18" x2="32" y2="22" stroke="#D4AF37" stroke-width="2"/>
+  <line x1="36" y1="18" x2="36" y2="24" stroke="#D4AF37" stroke-width="2"/>
+</svg>

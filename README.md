@@ -59,6 +59,24 @@ This repository contains the complete visual branding universe for **The Worksho
    - Implementation checklist
    - **Check this** when you need quick answers
 
+### Ready-to-Use Assets
+
+6. **[assets/SVG_ASSETS_GUIDE.md](./assets/SVG_ASSETS_GUIDE.md)**
+   - Complete SVG graphics library
+   - Logos in multiple variations
+   - Tool-inspired icon set (12 icons)
+   - Blueprint patterns and backgrounds
+   - Decorative elements and dividers
+   - Canva import instructions
+   - Design project templates
+   - **Import these** directly into Canva or design tools
+
+**Asset Categories**:
+- 📁 `assets/logos/` - 5 logo variations (icon, wordmark, full logo)
+- 📁 `assets/icons/` - 12 tool-inspired icons (hammer, wrench, ruler, code, etc.)
+- 📁 `assets/patterns/` - Blueprint grid and geometric patterns
+- 📁 `assets/elements/` - Dividers, badges, buttons, corner brackets
+
 ---
 
 ## 🎨 Brand Essence
@@ -130,6 +148,28 @@ A boutique digital studio that treats code as craft, designs as blueprints, and 
 1. Read: [THE_WORKSHOP_BRANDING_UNIVERSE.md](./THE_WORKSHOP_BRANDING_UNIVERSE.md)
 2. Use: Implementation checklist in [WORKSHOP_QUICK_REFERENCE.md](./WORKSHOP_QUICK_REFERENCE.md)
 3. Reference: [WORKSHOP_QUICK_REFERENCE.md](./WORKSHOP_QUICK_REFERENCE.md) for quick decisions
+
+### For Canva Users
+
+1. **Download** all SVG files from `assets/` folder
+2. **Import** to Canva via Uploads section
+3. **Read**: [assets/SVG_ASSETS_GUIDE.md](./assets/SVG_ASSETS_GUIDE.md) for complete instructions
+4. **Use**: Pre-made design templates and recipes
+
+**Quick Canva Start**:
+- Import `workshop-logo-horizontal.svg` for your header
+- Import icon set for feature highlights
+- Use `blueprint-grid.svg` as background at 10-15% opacity
+- Apply brand colors: #D4AF37 (brass), #2B2D2F (charcoal), #4A90E2 (blue)
+- Fonts: IBM Plex Mono (headings), Inter (body)
+
+**Ready-to-Make Projects**:
+- Instagram post (1080×1080px)
+- Business card (3.5×2 in)
+- Presentation slide (1920×1080px)
+- Social media header
+
+👉 See [SVG_ASSETS_GUIDE.md](./assets/SVG_ASSETS_GUIDE.md) for step-by-step Canva tutorials!
 
 ---
 

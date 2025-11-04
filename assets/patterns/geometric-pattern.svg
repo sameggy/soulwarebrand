@@ -1,0 +1,19 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Geometric Pattern - Isometric grid inspired by workshop tools -->
+
+  <defs>
+    <pattern id="iso-pattern" x="0" y="0" width="80" height="69.28" patternUnits="userSpaceOnUse">
+      <!-- Isometric cube wireframe -->
+      <path d="M 0 17.32 L 20 34.64 L 40 17.32 L 40 51.96 L 20 69.28 L 0 51.96 Z"
+            stroke="#D4AF37" stroke-width="0.5" fill="none" opacity="0.2"/>
+      <path d="M 40 17.32 L 60 34.64 L 80 17.32 L 80 51.96 L 60 69.28 L 40 51.96 Z"
+            stroke="#D4AF37" stroke-width="0.5" fill="none" opacity="0.2"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="#2B2D2F"/>
+
+  <!-- Pattern -->
+  <rect width="400" height="400" fill="url(#iso-pattern)"/>
+</svg>
