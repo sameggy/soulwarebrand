@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soulware - Crafted AI. Amplified Humans.</title>
+    <style>
+        /* WORKSHOP BRAND COLOR SYSTEM */
+        :root {
+            /* Warm Base (70%) - Human/Craft */
+            --workshop-white: #F5F1E8;
+            --sandstone: #E8DCC8;
+            --honey-wood: #C4A27A;
+            --warm-walnut: #8B7355;
+            --deep-espresso: #2C2520;
+
+            /* Cool Tech Accents (25%) - AI/Digital */
+            --bright-cyan: #00D9FF;
+            --true-blue: #0088FF;
+            --deep-tech-blue: #004D99;
+            --light-cyan-glow: #80E8FF;
+
+            /* Energy Accents (5%) - Action/Impact */
+            --warm-amber: #FF9500;
+            --bright-gold: #FFC947;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--workshop-white);
+            color: var(--warm-walnut);
+            line-height: 1.6;
+        }
+
+        /* TYPOGRAPHY SYSTEM */
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 500;
+            color: var(--deep-espresso);
+            line-height: 1.1;
+            letter-spacing: -0.01em;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: var(--deep-espresso);
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            font-weight: 500;
+            color: var(--warm-walnut);
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-size: 0.875rem;
+            font-weight: 400;
+            color: var(--warm-walnut);
+            line-height: 1.4;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1.125rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .body-large {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            color: var(--warm-walnut);
+        }
+
+        /* HEADER / NAVIGATION */
+        header {
+            background-color: var(--workshop-white);
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--sandstone);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--deep-espresso);
+            letter-spacing: 0.08em;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--warm-walnut);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--honey-wood);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--workshop-white) 0%, var(--sandstone) 100%);
+        }
+
+        /* Workshop grid pattern overlay */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                linear-gradient(var(--sandstone) 1px, transparent 1px),
+                linear-gradient(90deg, var(--sandstone) 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-tagline {
+            font-size: 1.5rem;
+            color: var(--honey-wood);
+            font-style: italic;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            letter-spacing: 0.02em;
+        }
+
+        .hero-description {
+            margin-bottom: 2.5rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: var(--warm-amber);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #E68500;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 149, 0, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--deep-espresso);
+            border: 2px solid var(--honey-wood);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--honey-wood);
+            color: white;
+        }
+
+        /* Workshop Visual Element (simulated workspace) */
+        .hero-visual {
+            background: linear-gradient(135deg, rgba(196, 162, 122, 0.15), rgba(0, 217, 255, 0.1));
+            border-radius: 12px;
+            padding: 3rem;
+            border: 2px solid var(--sandstone);
+            position: relative;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Simulated holographic interface */
+        .hologram-ui {
+            width: 100%;
+            height: 100%;
+            border: 1.5px solid var(--bright-cyan);
+            border-radius: 8px;
+            padding: 2rem;
+            background: rgba(0, 217, 255, 0.05);
+            box-shadow: 0 0 30px rgba(0, 217, 255, 0.2);
+            position: relative;
+        }
+
+        .hologram-ui::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 8px;
+            background: linear-gradient(45deg, transparent 48%, var(--bright-cyan) 50%, transparent 52%);
+            background-size: 20px 20px;
+            opacity: 0.1;
+        }
+
+        .hologram-text {
+            color: var(--bright-cyan);
+            font-size: 0.9rem;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+            opacity: 0.8;
+        }
+
+        /* VALUE PROPOSITIONS SECTION */
+        .value-props {
+            padding: 6rem 2rem;
+            background-color: var(--workshop-white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+        }
+
+        .value-card {
+            background-color: white;
+            border: 1px solid var(--sandstone);
+            border-radius: 8px;
+            padding: 2.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(196, 162, 122, 0.2);
+        }
+
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--honey-wood), var(--bright-cyan));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        /* HOW IT WORKS SECTION */
+        .how-it-works {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--sandstone) 0%, var(--workshop-white) 100%);
+        }
+
+        .step-grid {
+            display: grid;
+            gap: 4rem;
+        }
+
+        .step {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .step:nth-child(even) {
+            direction: rtl;
+        }
+
+        .step:nth-child(even) > * {
+            direction: ltr;
+        }
+
+        .step-number {
+            font-size: 5rem;
+            font-weight: 700;
+            color: var(--honey-wood);
+            opacity: 0.3;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-visual {
+            background-color: white;
+            border-radius: 8px;
+            padding: 3rem;
+            border: 1px solid var(--sandstone);
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .step-visual::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, var(--bright-cyan) 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.1;
+            animation: moveGrid 20s linear infinite;
+        }
+
+        @keyframes moveGrid {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(20px, 20px); }
+        }
+
+        /* RESULTS SECTION */
+        .results {
+            padding: 6rem 2rem;
+            background-color: var(--deep-espresso);
+            color: var(--workshop-white);
+        }
+
+        .results h2 {
+            color: var(--workshop-white);
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .result-card {
+            background-color: rgba(245, 241, 232, 0.1);
+            border: 1px solid rgba(196, 162, 122, 0.3);
+            border-radius: 8px;
+            padding: 2.5rem;
+        }
+
+        .result-card h3 {
+            color: var(--workshop-white);
+            margin-bottom: 1rem;
+        }
+
+        .metric {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--warm-amber);
+            margin: 1rem 0;
+        }
+
+        .result-card p {
+            color: var(--sandstone);
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--deep-espresso);
+            color: var(--sandstone);
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand {
+            color: var(--workshop-white);
+        }
+
+        .footer-brand .logo {
+            color: var(--workshop-white);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .footer-links h4 {
+            color: var(--workshop-white);
+            margin-bottom: 1rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--sandstone);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--honey-wood);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(196, 162, 122, 0.2);
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--warm-walnut);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero-grid,
+            .value-grid,
+            .step,
+            .results-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .step:nth-child(even) {
+                direction: ltr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* ACCESSIBILITY */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--deep-espresso);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="#" class="logo">SOULWARE</a>
+            <ul class="nav-links">
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main id="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-grid">
+                    <div class="hero-text">
+                        <h1>Crafted AI. Amplified Humans.</h1>
+                        <p class="hero-tagline">Where artisan craft meets digital precision</p>
+                        <p class="body-large hero-description">
+                            We craft AI-powered solutions that unlock human potential and operational excellence. Technology built with soul, for souls.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn btn-primary">See How We Work</a>
+                            <a href="#solutions" class="btn btn-secondary">Explore Solutions</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="hologram-ui">
+                            <p class="hologram-text">
+                                &gt; ANALYZING OPERATIONS...<br><br>
+                                &gt; IDENTIFYING BOTTLENECKS<br>
+                                &gt; CRAFTING CUSTOM SOLUTION<br>
+                                &gt; INTEGRATING AI TOOLS<br><br>
+                                &gt; EFFICIENCY: +250%<br>
+                                &gt; TIME SAVED: 1,500 HRS/MONTH<br><br>
+                                &gt; STATUS: HUMAN POTENTIAL UNLOCKED
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VALUE PROPOSITIONS -->
+        <section id="solutions" class="value-props">
+            <div class="container">
+                <div class="section-header">
+                    <h4>What We Do</h4>
+                    <h2>Operational Excellence Through Craft</h2>
+                    <p class="body-large">We analyze, build, and integrate AI-powered tools that seamlessly enhance your workflows.</p>
+                </div>
+                <div class="value-grid">
+                    <div class="value-card">
+                        <div class="icon-circle">📊</div>
+                        <h3>Analyze Operations</h3>
+                        <p>We study where time and talent are lost, diagnosing operational bottlenecks with precision and care.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon-circle">🔨</div>
+                        <h3>Craft Solutions</h3>
+                        <p>Custom AI-powered tools built with the precision of master artisans, tailored to your exact needs.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon-circle">🔗</div>
+                        <h3>Seamless Integration</h3>
+                        <p>Tools that integrate naturally into your workflows, enhancing without disrupting your operations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h4>Our Process</h4>
+                    <h2>How We Work</h2>
+                </div>
+                <div class="step-grid">
+                    <div class="step">
+                        <div class="step-content">
+                            <div class="step-number">01</div>
+                            <h3>Understand Your Operations</h3>
+                            <p>We enter your workspace, study your workflows, and analyze where time and talent are being wasted. Deep understanding before any building.</p>
+                        </div>
+                        <div class="step-visual">
+                            <p style="color: var(--bright-cyan); font-family: monospace; font-size: 0.85rem; z-index: 1;">
+                                // Diagnostic Phase<br>
+                                analyze_workflows();<br>
+                                identify_bottlenecks();<br>
+                                measure_time_loss();<br>
+                                map_talent_allocation();
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-content">
+                            <div class="step-number">02</div>
+                            <h3>Craft Custom Tools</h3>
+                            <p>We build AI-powered solutions with the care and precision of master craftspeople. Custom-fit to your operations, not mass-produced.</p>
+                        </div>
+                        <div class="step-visual">
+                            <p style="color: var(--honey-wood); font-weight: 500; z-index: 1;">
+                                ⚙️ Building Custom Solution<br><br>
+                                ✓ Workflow automation module<br>
+                                ✓ Decision enhancement layer<br>
+                                ✓ Integration framework<br>
+                                ✓ User interface (intuitive)<br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-content">
+                            <div class="step-number">03</div>
+                            <h3>Integrate Seamlessly</h3>
+                            <p>We ensure our tools fit naturally into your existing systems. No disruption, just enhancement. It feels like it was always there.</p>
+                        </div>
+                        <div class="step-visual">
+                            <p style="color: var(--warm-walnut); z-index: 1;">
+                                🔗 Integration Status<br><br>
+                                Existing Systems: Connected ✓<br>
+                                Data Flows: Synchronized ✓<br>
+                                User Training: Complete ✓<br>
+                                Performance: Optimized ✓
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-content">
+                            <div class="step-number">04</div>
+                            <h3>Amplify Your Team</h3>
+                            <p>Your people focus on meaningful work. Repetitive tasks automated. Decisions enhanced. Operational excellence achieved.</p>
+                        </div>
+                        <div class="step-visual">
+                            <p style="color: var(--warm-amber); font-weight: 600; z-index: 1;">
+                                📈 Impact Achieved<br><br>
+                                Time Saved: 1,500 hrs/month<br>
+                                Efficiency: +250%<br>
+                                Team Satisfaction: ↑92%<br>
+                                Human Potential: UNLOCKED
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESULTS -->
+        <section id="results" class="results">
+            <div class="container">
+                <div class="section-header">
+                    <h4>Proven Impact</h4>
+                    <h2>Operational Excellence, Delivered</h2>
+                </div>
+                <div class="results-grid">
+                    <div class="result-card">
+                        <h3>Manufacturing Leader</h3>
+                        <div class="metric">10X</div>
+                        <p>Efficiency improvement in quality control processes. 250 hours saved per week, redirected to innovation.</p>
+                    </div>
+                    <div class="result-card">
+                        <h3>Healthcare Organization</h3>
+                        <div class="metric">95%</div>
+                        <p>User adoption rate within 30 days. Seamless integration into existing workflows, zero resistance.</p>
+                    </div>
+                    <div class="result-card">
+                        <h3>Financial Services</h3>
+                        <div class="metric">$2.4M</div>
+                        <p>Annual operational cost savings through intelligent automation and enhanced decision-making.</p>
+                    </div>
+                    <div class="result-card">
+                        <h3>Technology Startup</h3>
+                        <div class="metric">3 Weeks</div>
+                        <p>From analysis to deployment. Custom solution crafted and integrated in record time, without cutting corners.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="logo">SOULWARE</span>
+                <p style="font-style: italic; color: var(--honey-wood); margin-bottom: 1rem;">
+                    Crafted AI. Amplified Humans.
+                </p>
+                <p style="font-size: 0.9rem;">
+                    Technology built with soul, for souls. We craft AI-powered solutions that unlock human potential and operational excellence.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="#">Workflow Automation</a></li>
+                    <li><a href="#">Decision Enhancement</a></li>
+                    <li><a href="#">Operational Analytics</a></li>
+                    <li><a href="#">Custom Integration</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Our Process</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Soulware. All rights reserved. | Crafted with precision and care.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background (remove for transparent) -->
+  <rect width="80" height="80" fill="#F5F1E8"/>
+
+  <!-- The Precision Compass Icon - Centered -->
+  <g id="compass-icon" transform="translate(10, 10)">
+    <!-- Outer circle -->
+    <circle cx="30" cy="30" r="28" fill="none" stroke="#C4A27A" stroke-width="2.5"/>
+
+    <!-- Inner geometric compass design -->
+    <!-- Center point -->
+    <circle cx="30" cy="30" r="3.5" fill="#C4A27A"/>
+
+    <!-- Compass arms (precision tool) -->
+    <line x1="30" y1="30" x2="30" y2="8" stroke="#C4A27A" stroke-width="3" stroke-linecap="round"/>
+    <line x1="30" y1="30" x2="30" y2="52" stroke="#C4A27A" stroke-width="3" stroke-linecap="round"/>
+    <line x1="30" y1="30" x2="8" y2="30" stroke="#C4A27A" stroke-width="3" stroke-linecap="round"/>
+    <line x1="30" y1="30" x2="52" y2="30" stroke="#C4A27A" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Tech/data nodes at compass points -->
+    <circle cx="30" cy="8" r="3" fill="#00D9FF"/>
+    <circle cx="30" cy="52" r="3" fill="#00D9FF"/>
+    <circle cx="8" cy="30" r="3" fill="#00D9FF"/>
+    <circle cx="52" cy="30" r="3" fill="#00D9FF"/>
+
+    <!-- Diagonal precision lines -->
+    <line x1="30" y1="30" x2="45" y2="15" stroke="#C4A27A" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <line x1="30" y1="30" x2="15" y2="15" stroke="#C4A27A" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <line x1="30" y1="30" x2="45" y2="45" stroke="#C4A27A" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <line x1="30" y1="30" x2="15" y2="45" stroke="#C4A27A" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Small tech nodes on diagonals -->
+    <circle cx="45" cy="15" r="2" fill="#00D9FF" opacity="0.8"/>
+    <circle cx="15" cy="15" r="2" fill="#00D9FF" opacity="0.8"/>
+    <circle cx="45" cy="45" r="2" fill="#00D9FF" opacity="0.8"/>
+    <circle cx="15" cy="45" r="2" fill="#00D9FF" opacity="0.8"/>
+
+    <!-- Inner circle detail -->
+    <circle cx="30" cy="30" r="18" fill="none" stroke="#C4A27A" stroke-width="1.5" opacity="0.3"/>
+  </g>
+</svg>

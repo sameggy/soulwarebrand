@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="140" viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark Background -->
+  <rect width="400" height="140" fill="#2C2520"/>
+
+  <!-- The Precision Compass Icon -->
+  <g id="compass-icon" transform="translate(40, 40)">
+    <!-- Outer circle -->
+    <circle cx="30" cy="30" r="28" fill="none" stroke="#F5F1E8" stroke-width="2"/>
+
+    <!-- Center point -->
+    <circle cx="30" cy="30" r="3" fill="#F5F1E8"/>
+
+    <!-- Compass arms -->
+    <line x1="30" y1="30" x2="30" y2="8" stroke="#F5F1E8" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="30" y1="30" x2="30" y2="52" stroke="#F5F1E8" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="30" y1="30" x2="8" y2="30" stroke="#F5F1E8" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="30" y1="30" x2="52" y2="30" stroke="#F5F1E8" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Tech nodes at compass points (cyan still pops on dark) -->
+    <circle cx="30" cy="8" r="2.5" fill="#00D9FF"/>
+    <circle cx="30" cy="52" r="2.5" fill="#00D9FF"/>
+    <circle cx="8" cy="30" r="2.5" fill="#00D9FF"/>
+    <circle cx="52" cy="30" r="2.5" fill="#00D9FF"/>
+
+    <!-- Diagonal precision lines -->
+    <line x1="30" y1="30" x2="45" y2="15" stroke="#F5F1E8" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="30" y1="30" x2="15" y2="15" stroke="#F5F1E8" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="30" y1="30" x2="45" y2="45" stroke="#F5F1E8" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="30" y1="30" x2="15" y2="45" stroke="#F5F1E8" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Small tech nodes on diagonals -->
+    <circle cx="45" cy="15" r="1.5" fill="#00D9FF" opacity="0.8"/>
+    <circle cx="15" cy="15" r="1.5" fill="#00D9FF" opacity="0.8"/>
+    <circle cx="45" cy="45" r="1.5" fill="#00D9FF" opacity="0.8"/>
+    <circle cx="15" cy="45" r="1.5" fill="#00D9FF" opacity="0.8"/>
+
+    <!-- Inner circle detail -->
+    <circle cx="30" cy="30" r="18" fill="none" stroke="#F5F1E8" stroke-width="1" opacity="0.3"/>
+  </g>
+
+  <!-- SOULWARE Wordmark (white on dark) -->
+  <text x="110" y="60" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="500" fill="#F5F1E8" letter-spacing="2">
+    SOULWARE
+  </text>
+
+  <!-- Tagline -->
+  <text x="110" y="85" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="300" fill="#E8DCC8" letter-spacing="0.5" font-style="italic">
+    Crafted AI. Amplified Humans.
+  </text>
+
+  <!-- Horizontal line accent -->
+  <line x1="110" y1="90" x2="200" y2="90" stroke="#F5F1E8" stroke-width="1" opacity="0.4"/>
+</svg>
